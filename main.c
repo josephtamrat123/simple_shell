@@ -6,6 +6,13 @@ int handle_arguments(int ac, char **av, int *exec_file);
 void sigintHandler(int sig_num);
 char *get_first_av();
 
+/**
+ * main - Entry point
+ * @ac: number of arguments
+ * @av: Array of arguments
+ *
+ * Return: 0 on success
+*/
 int main(int ac, char **av)
 {
 	int read, exec_file = 0;
@@ -46,7 +53,14 @@ int main(int ac, char **av)
 	return (*process_exit_code());
 }
 
-
+/**
+ * handle_arguments - Check the number of arguments passed to main
+ * @ac: Number of arguments
+ * @av: Array of arguments as strings
+ * @exec_file: Integer used to check if user wants to exec commands from file
+ *
+ * Return: File descriptor to file
+*/
 int handle_arguments(int ac, char **av, int *exec_file)
 {
 	int fd = STDIN_FILENO;
@@ -80,7 +94,11 @@ void sigintHandler(int __attribute__((unused))sig_num)
 	write(STDIN_FILENO, "\n$ ", 3);
 }
 
-
+/**
+ * get_first_av - Returns the first argument passed to main
+ *
+ * Return: Pointer to first arg passed to main
+*/
 char *get_first_av(void)
 {
 	return (FIRST_ARG);
