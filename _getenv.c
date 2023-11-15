@@ -1,8 +1,7 @@
 #include "shell.h"
 
 /**
- * _getenv - Returns a pointer to a env var value
- * @name: Environment variable name
+  * @name: Environment variable name
  *
  * Return: Pointer to environment variable value
 */
