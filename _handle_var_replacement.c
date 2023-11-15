@@ -1,8 +1,7 @@
 #include "shell.h"
 
 /**
- * handle_var_replacement - Handles dollar vars '$'
- * @commands: Array of commands
+  * @commands: Array of commands
 */
 void handle_var_replacement(char **commands)
 {
@@ -12,8 +11,7 @@ void handle_var_replacement(char **commands)
 	if (commands[0] == NULL)
 		return;
 
-	/* Scan command args and replace the needed ones using PATH, and $$, $? */
-	for (i = 1; commands[i] != NULL; i++)
+ 	for (i = 1; commands[i] != NULL; i++)
 	{
 		if (commands[i][0] != '$')
 			continue;
