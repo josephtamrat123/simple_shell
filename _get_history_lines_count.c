@@ -2,9 +2,6 @@
 
 static int COUNT_LINES;
 
-/**
- * update_count_lines - Counts the lines in a previo
-*/
 void update_count_lines(void)
 {
 	char curr_dir[512];
@@ -42,8 +39,7 @@ void update_count_lines(void)
 }
 
 /**
- * get_history_lines_count - Returns the lines count of history file
- *
+  *
  * Return: Pointer to lines count
 */
 int *get_history_lines_count()
