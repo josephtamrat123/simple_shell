@@ -1,0 +1,44 @@
+.TH simple_shell "15 november 2023" "V1.0" "simple_shell man page"
+.SH NAME				
+.B simple_shell - Simple Unix comand interpreter	
+simple_shell: the shell or command interpreter is the computer program 
+that provides a user interface to access the services of the operating system.
+
+.SH SYNOPSYS				
+.B #include \fB"shell.h"
+
+./hsh
+/bin/[command] [option]
+[command] [option]
+
+.SH DESCRIPTION
+Shell is a user interface to use the services of a computer. 
+It can be a command-line interface –the one we will build- or graphical user interface, 
+like regular software such as Windows Office.
+
+.SH EXAMPLES
+$  /bin/ls -l
+-rw-r--r-- 1 abina 197609  158 Oct 30 11:37 AUTHORS
+-rw-r--r-- 1 abina 197609 3978 Oct 30 11:15 builtins.c
+-rw-r--r-- 1 abina 197609 3934 Oct 30 11:16 f_alias_list.c
+-rw-r--r-- 1 abina 197609 1083 Oct 30 11:16 f_builtin_utils.c
+-rw-r--r-- 1 abina 197609 3018 Oct 30 11:16 f_command_handlers.c
+-rw-r--r-- 1 abina 197609  754 Oct 30 11:14 f_error.c
+-rw-r--r-- 1 abina 197609 1372 Oct 30 11:15 f_exit.c
+
+$  ls -l
+-rw-r--r-- 1 abina 197609  158 Oct 30 11:37 AUTHORS
+-rw-r--r-- 1 abina 197609 3978 Oct 30 11:15 builtins.c
+-rw-r--r-- 1 abina 197609 3934 Oct 30 11:16 f_alias_list.c
+-rw-r--r-- 1 abina 197609 1083 Oct 30 11:16 f_builtin_utils.c
+-rw-r--r-- 1 abina 197609 3018 Oct 30 11:16 f_command_handlers.c
+-rw-r--r-- 1 abina 197609  754 Oct 30 11:14 f_error.c
+-rw-r--r-- 1 abina 197609 1372 Oct 30 11:15 f_exit.c
+
+.SH AUTHOR'S				
+-Written by yosef tamrat <jossytamrst123@gmail.com> and aklil dereje <aklildereje@gmail.com>
+
+.SH BUGS
+There were no errors in the testing time of this code (novamber 15, 2023).
+.SH SEE ALSO
+sh
