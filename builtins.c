@@ -1,9 +1,8 @@
 #include "shell.h"
 void env(void)
 {
-	int i;
+int i;
 	char **env = __environ;
-
 	for (i = 0; env[i]; i++)
 	{
 		write(STDOUT_FILENO, env[i], _strlen(env[i]));
